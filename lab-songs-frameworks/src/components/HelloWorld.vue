@@ -24,8 +24,8 @@
           <p><strong>{{song.name}}</strong></p>
           <h3>{{ song.like }}</h3>
           <div>
-            <i class="fa fa-hand-o-up" @click="like(song, artistIndex, songIndex)"></i>
-            <i class="fa fa-hand-o-down" @click="dislike(artist, artistIndex, songIndex)"></i>
+            <button class="fa fa-hand-o-up" @click="like(song, artistIndex, songIndex)">like</button>
+            <button class="fa fa-hand-o-down" @click="dislike(artist, artistIndex, songIndex)">Dislike</button>
           </div>
         </div>
       </div>
