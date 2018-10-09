@@ -153,6 +153,6 @@ a {
   color: #42b983;
 }
 i{
-  font-size: 30px
+  font-size: 50px
 }
 </style>
