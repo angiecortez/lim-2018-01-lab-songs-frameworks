@@ -8,14 +8,14 @@
       <input placeholder="Busca a tu artista" v-model="search" @keyup.enter="createArtist()">
       <!-- SELECT AN ARTIST -->
       <select v-model="selectedArtist">
-        <option v-for="(artist, firstIndex) in artists">{{artist}}</option>
+        <option v-for="(artist, firstIndex) in artists" :key="firstIndex">{{artist}}</option>
       </select>
       <!-- LIMITAR # DE CANCIONES -->
       <input type="number" step=1 v-model="input_limit">
     </main>
     <h1>{{selectedArtist}}</h1>
-    <div v-for="(artist, artistIndex) in localArtists">
-      <div v-for="(song, songIndex) in artist" v-show="song.artist['#text'] == selectedArtist">
+    <div v-for="(artist, artistIndex) in localArtists" :key="artistIndex">
+      <div v-for="(song, songIndex) in artist" :key="songIndex" v-show="song.artist['#text'] == selectedArtist">
         <div class="container">
           <p>Album: {{song.album['#text']}}</p>
           <div>
