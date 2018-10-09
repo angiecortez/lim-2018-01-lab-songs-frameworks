@@ -61,7 +61,7 @@ export default {
   },
   created () {
     // Predefined data
-    this.endpoint = 'http://ws.audioscrobbler.com/2.0/'
+    this.endpoint = 'https://ws.audioscrobbler.com/2.0/'
     this.user = 'user=rj'
     this.api_key = 'api_key=9477be879cb8ef4d370328ecdb0e4739'
     this.format = 'format=' + this.input_format
